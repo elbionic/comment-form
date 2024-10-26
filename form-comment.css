@@ -1,0 +1,90 @@
+:root {
+    --global-grey: #666666;
+    --global-light-grey: #d8d8d8;
+    --global-green: #8BC34A;
+    --global-transparent-green: #8bc34a40;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    padding: 1em;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    color: var(--global-grey);
+}
+
+h1 {
+    text-align: left;
+}
+
+form {
+    font-size: 1rem;
+}
+
+ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.1rem;
+    text-align: left;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    padding-left: 0.4rem;
+    font-size: 1rem;
+}
+
+input {
+    min-height: 2.5rem;
+    border: 1px solid var(--global-light-grey);
+}
+
+textarea {
+    height: 10rem;
+    padding-top: 0.4rem;
+    resize: none;
+    border: 1px solid var(--global-light-grey);
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+    border: 1px solid var(--global-grey);
+}
+
+input:valid,
+textarea:valid {
+    border: 1px solid var(--global-green);
+    background-color: var(--global-transparent-green);
+}
+
+button {
+    padding: 15px;
+    font-size: 1rem;
+    color: var(--global-green);
+    background-color: transparent;
+    border: 1px solid var(--global-green);
+    border-radius: 0.3rem;
+}
+
+button:hover,
+button:focus {
+    color: var(--global-grey);
+    background-color: var(--global-transparent-green);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="~repos/marryTea/css/reset.css"> -->
+    <link rel="stylesheet" href="form-comment.css">
+    <title>Comment form</title>
+</head>
+
+<body>
+    <form action="" method="">
+        <h1>Write your comment!</h1>
+        <ul>
+            <li>
+                <label for="name">
+                    <span aria-required="true">*</span>Name:
+                </label>
+                <input type="text" name="name" id="name" required minlength="3" maxlength="100" title="Please type in a valid name. 
+                    If your name is currently not supported, please type in GOD." placeholder="Amy Cale">
+            </li>
+            <li>
+                <label for="email">
+                    <span aria-required="true">*</span>Email address:
+                </label>
+                <input type="email" name="email" id="email" required minlength="3" title="Please "
+                    placeholder="xx @ xx">
+            </li>
+            <li>
+                <label for="comment">
+                    <span aria-required="true">*</span>Comment:
+                </label>
+                <textarea name="comment" id="comment" required minlength="3" maxlength="499"
+                    placeholder="Please use less than 500 characters (e.g. letters)."></textarea>
+            </li>
+            <li>
+                <button>Send comment</button>
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>
