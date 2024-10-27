@@ -9,7 +9,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: none;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -62,6 +61,11 @@ textarea {
     padding-top: 0.4rem;
     resize: none;
     border: 1px solid var(--global-light-grey);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 1px solid var(--global-grey);
 }
 
 input:focus:invalid,
